@@ -1,0 +1,421 @@
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("/fonts/Bahnschrift.TTF") format("truetype");
+}
+
+body {
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  min-width: 100vh;
+  margin: 0;
+  color: #1b203d;
+  background-color: #482c69;
+}
+
+body h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+}
+
+/* Header */
+header {
+  background: transparent linear-gradient(180deg, #834787 0%, #482c69 100%) 0%
+    0% no-repeat padding-box;
+  margin: 0;
+  width: 100%;
+  height: 115px;
+  top: 0;
+  position: relative;
+}
+
+header nav {
+  top: 0;
+  height: 115px;
+  width: 100%;
+}
+
+.header_logo {
+  position: absolute;
+  max-height: 147px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(0px 3px 25px #834787);
+}
+
+.options_icon {
+  position: absolute;
+  display: block;
+  height: 85px;
+  top: 12px;
+  left: 1.5%;
+}
+
+.search_bar {
+  position: absolute;
+  display: block;
+  width: 348px;
+  height: 42px;
+  border-radius: 5px;
+  background: #1b203d99;
+  border: none;
+  top: 33px;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.search_icon {
+  position: absolute;
+  display: block;
+  height: 60px;
+  left: 31.5%;
+  transform: translateX(-50%);
+  top: 26px;
+}
+
+.account_icon {
+  position: absolute;
+  display: block;
+  height: 85px;
+  top: 12px;
+  left: 91%;
+  transform: translateX(-50%);
+}
+
+.cart_icon {
+  position: absolute;
+  display: block;
+  height: 85px;
+  top: 12px;
+  left: 96%;
+  transform: translateX(-50%);
+}
+
+/* Main */
+
+.main-wrapper {
+  min-height: 776px;
+  display: grid;
+  grid-template-columns: 785px 785px;
+  grid-template-rows: 220px 200px 261px;
+  justify-content: center;
+  gap: 2% 1%;
+  grid-template-areas:
+    "join_today preorder"
+    "join_today sell"
+    "new used";
+}
+
+main {
+  position: relative;
+  top: 50px;
+}
+
+main a {
+  letter-spacing: 2.4px;
+  color: #bbc5cf;
+  float: right;
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+main h2 {
+  text-align: left;
+  padding: 0;
+  margin: 6px 16px;
+  width: 220px;
+}
+
+main p {
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+section {
+  background-color: #834787;
+  margin: 0;
+}
+
+.join_today {
+  background-color: transparent;
+  grid-area: join_today;
+}
+
+.join_today img {
+  width: 785px;
+  height: 419px;
+  margin: 0;
+}
+
+.join_today h1 {
+  position: absolute;
+  left: 9.5%;
+  top: 20px;
+  font-size: 200%;
+  color: #fff;
+  text-shadow: 0px 3px 6px #0000004d;
+}
+
+.front_preorder {
+  position: relative;
+  height: 220px;
+  width: 785px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 0;
+  grid-area: preorder;
+}
+
+.front_preorder div {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.front_preorder p {
+  position: relative;
+  bottom: 105px;
+}
+
+.front_preorder a {
+  margin-top: 140px;
+}
+
+.front_games {
+  max-width: 108px;
+  max-height: 139px;
+}
+
+.front_sell {
+  height: 153px;
+  width: 785px;
+  border-radius: 15px;
+  margin-bottom: 17px;
+  grid-area: sell;
+  align-self: end;
+}
+
+.front_sell p {
+  letter-spacing: 0.5px;
+  margin-left: 16px;
+  width: 572px;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.front_sell img {
+  float: right;
+  max-height: 99px;
+  margin: 15px 15px 0 0;
+}
+
+.front_new {
+  height: 215px;
+  width: 785px;
+  border-radius: 15px;
+  grid-area: new;
+}
+
+.front_new div {
+  position: relative;
+  display: inline-block;
+}
+
+.front_new a {
+  margin-top: 10px;
+}
+
+.front_used {
+  height: 215px;
+  width: 785px;
+  border-radius: 15px;
+  grid-area: used;
+}
+
+.front_used div {
+  position: relative;
+  display: inline-block;
+}
+
+.front_used a {
+  margin-top: 10px;
+}
+
+.front_small {
+  max-height: 121px;
+  margin-left: 29px;
+}
+
+/* Footer */
+footer {
+  font-family: "Bahnschrift";
+  font-weight: lighter;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #1b203d;
+  margin-bottom: 0;
+  max-height: 64px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+  color: #fff;
+  display: inline-flex;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 15px;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+footer img {
+  max-height: 60px;
+}
+
+footer ul li img {
+  display: inline-block;
+  max-height: 15px;
+  max-width: 15px;
+  margin-right: 0.5rem;
+  margin-bottom: -3px;
+}
+
+/* MEDIA */
+
+@media (min-width: 1960px) {
+  .join_today h1 {
+    left: 20%;
+  }
+
+  footer {
+    margin-top: 360px;
+  }
+}
+
+@media (max-width: 1600px) {
+  header {
+    max-height: 89px;
+  }
+
+  .header_logo {
+    max-height: 90px;
+  }
+
+  .account_icon {
+    display: none;
+  }
+
+  .cart_icon {
+    left: 95%;
+    top: 7px;
+    max-height: 70px;
+  }
+
+  .options_icon {
+    top: 7px;
+    max-height: 70px;
+  }
+
+  .search_field {
+    display: block;
+    height: 41px;
+    width: 100vh;
+  }
+
+  .search_bar {
+    top: 100px;
+    left: 45%;
+    transform: translateX(-50%);
+    height: 30%;
+    width: 40%;
+    border: solid #834787;
+    border-width: 10px 100vh;
+  }
+
+  .search_icon {
+    top: 100px;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+  }
+
+  main {
+    height: 100%;
+    margin-bottom: 200px;
+  }
+
+  .main-wrapper {
+    margin-top: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 2%;
+    grid-template-areas:
+      "join_today"
+      "new"
+      "used"
+      "preorder"
+      "sell";
+  }
+
+  .join_today h1 {
+    left: 30%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 800px) {
+  body header {
+    transform: scale(80%, 80%);
+    width: 100%;
+  }
+
+  main {
+    transform: scale(0.5, 0.5);
+  }
+
+  .front_new div,
+  .front_used div {
+    margin-left: 5%;
+  }
+
+  .front_used .media_none,
+  .front_new .media_none {
+    display: none;
+  }
+
+  footer {
+    padding: 60px 0;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.7rem;
+  }
+
+  footer ul li a {
+    font-size: 0.7rem;
+  }
+
+  footer img {
+    max-height: 80px;
+  }
+
+  .rightside_footer {
+    flex-direction: column-reverse;
+  }
+}
