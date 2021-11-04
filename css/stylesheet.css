@@ -3,10 +3,14 @@
   src: url("/fonts/Bahnschrift.TTF") format("truetype");
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 100vh;
-  min-width: 100vh;
+  min-height: 100%;
+  min-width: 100%;
   margin: 0;
   color: #1b203d;
   background-color: #482c69;
@@ -50,7 +54,7 @@ header nav {
   display: block;
   height: 85px;
   top: 12px;
-  left: 1.5%;
+  left: 40px;
 }
 
 .search_bar {
@@ -62,16 +66,14 @@ header nav {
   background: #1b203d99;
   border: none;
   top: 33px;
-  left: 20%;
-  transform: translateX(-50%);
+  left: 200px;
 }
 
 .search_icon {
   position: absolute;
   display: block;
   height: 60px;
-  left: 31.5%;
-  transform: translateX(-50%);
+  left: 560px;
   top: 26px;
 }
 
@@ -80,8 +82,7 @@ header nav {
   display: block;
   height: 85px;
   top: 12px;
-  left: 91%;
-  transform: translateX(-50%);
+  right: 160px;
 }
 
 .cart_icon {
@@ -89,14 +90,12 @@ header nav {
   display: block;
   height: 85px;
   top: 12px;
-  left: 96%;
-  transform: translateX(-50%);
+  right: 40px;
 }
 
 /* Main */
 
 .main-wrapper {
-  min-height: 776px;
   display: grid;
   grid-template-columns: 785px 785px;
   grid-template-rows: 220px 200px 261px;
@@ -141,6 +140,8 @@ section {
 .join_today {
   background-color: transparent;
   grid-area: join_today;
+  max-width: 785px;
+  max-height: 419px;
 }
 
 .join_today img {
@@ -151,63 +152,15 @@ section {
 
 .join_today h1 {
   position: absolute;
-  left: 9.5%;
-  top: 20px;
-  font-size: 200%;
+  font-size: 2rem;
   color: #fff;
   text-shadow: 0px 3px 6px #0000004d;
-}
-
-.front_preorder {
-  position: relative;
-  height: 220px;
-  width: 785px;
-  border-radius: 15px;
-  text-align: center;
-  margin-bottom: 0;
-  grid-area: preorder;
-}
-
-.front_preorder div {
-  display: inline-block;
-  padding-right: 10px;
-}
-
-.front_preorder p {
-  position: relative;
-  bottom: 105px;
-}
-
-.front_preorder a {
-  margin-top: 140px;
+  padding: 10px 40px;
 }
 
 .front_games {
   max-width: 108px;
   max-height: 139px;
-}
-
-.front_sell {
-  height: 153px;
-  width: 785px;
-  border-radius: 15px;
-  margin-bottom: 17px;
-  grid-area: sell;
-  align-self: end;
-}
-
-.front_sell p {
-  letter-spacing: 0.5px;
-  margin-left: 16px;
-  width: 572px;
-  font-size: 1.1rem;
-  margin-bottom: 0;
-}
-
-.front_sell img {
-  float: right;
-  max-height: 99px;
-  margin: 15px 15px 0 0;
 }
 
 .front_new {
@@ -242,6 +195,53 @@ section {
   margin-top: 10px;
 }
 
+.front_preorder {
+  position: relative;
+  height: 220px;
+  width: 785px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 0;
+  grid-area: preorder;
+}
+
+.front_preorder div {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.front_preorder p {
+  position: relative;
+  bottom: 105px;
+}
+
+.front_preorder a {
+  margin-top: 140px;
+}
+
+.front_sell {
+  height: 153px;
+  width: 785px;
+  border-radius: 15px;
+  margin-bottom: 17px;
+  grid-area: sell;
+  align-self: end;
+}
+
+.front_sell p {
+  letter-spacing: 0.5px;
+  margin-left: 16px;
+  width: 572px;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.front_sell img {
+  float: right;
+  max-height: 99px;
+  margin: 15px 15px 0 0;
+}
+
 .front_small {
   max-height: 121px;
   margin-left: 29px;
@@ -249,17 +249,16 @@ section {
 
 /* Footer */
 footer {
-  font-family: "Bahnschrift";
   font-weight: lighter;
   font-size: 0.9rem;
   color: #fff;
   background-color: #1b203d;
-  margin-bottom: 0;
   max-height: 64px;
   width: 100%;
   display: inline-flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 95px;
 }
 
 footer ul {
@@ -294,12 +293,8 @@ footer ul li img {
 /* MEDIA */
 
 @media (min-width: 1960px) {
-  .join_today h1 {
-    left: 20%;
-  }
-
   footer {
-    margin-top: 360px;
+    margin-top: 455px;
   }
 }
 
@@ -317,7 +312,6 @@ footer ul li img {
   }
 
   .cart_icon {
-    left: 95%;
     top: 7px;
     max-height: 70px;
   }
@@ -327,24 +321,25 @@ footer ul li img {
     max-height: 70px;
   }
 
-  .search_field {
+  nav div {
+    position: absolute;
     display: block;
-    height: 41px;
-    width: 100vh;
+    top: 100px;
+    height: 45px;
+    width: 100%;
+    background-color: #834787;
   }
 
   .search_bar {
-    top: 100px;
+    top: 7px;
     left: 45%;
     transform: translateX(-50%);
-    height: 30%;
+    height: 30px;
     width: 40%;
-    border: solid #834787;
-    border-width: 10px 100vh;
   }
 
   .search_icon {
-    top: 100px;
+    top: 0px;
     left: 70%;
     transform: translateX(-50%);
     width: 50px;
@@ -352,12 +347,12 @@ footer ul li img {
   }
 
   main {
+    margin-top: 20px;
     height: 100%;
     margin-bottom: 200px;
   }
 
   .main-wrapper {
-    margin-top: 20px;
     grid-template-columns: auto;
     grid-template-rows: auto;
     gap: 2%;
@@ -368,43 +363,67 @@ footer ul li img {
       "preorder"
       "sell";
   }
-
-  .join_today h1 {
-    left: 30%;
-    transform: translateX(-50%);
-  }
 }
 
 @media (max-width: 800px) {
-  body header {
-    transform: scale(80%, 80%);
-    width: 100%;
-  }
-
-  main {
-    transform: scale(0.5, 0.5);
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 
   .front_new div,
   .front_used div {
-    margin-left: 5%;
+    margin-left: 0;
   }
 
-  .front_used .media_none,
-  .front_new .media_none {
+  .media_none {
     display: none;
   }
 
+  section {
+    max-width: 90%;
+    max-height: 20em;
+  }
+
+  .join_today {
+    max-width: 100%;
+    height: auto;
+  }
+  .join_today h1 {
+    font-size: 5.5vw;
+    padding-left: 1.5%;
+  }
+
+  .join_today img {
+    max-width: 100%;
+    padding: 0 -20px;
+    height: auto;
+  }
+
+  .front_preorder {
+    justify-content: left;
+  }
+
+  .front_sell {
+    align-self: auto;
+    margin-bottom: auto;
+  }
+
   footer {
-    padding: 60px 0;
+    max-height: 20em;
+    padding: 0;
   }
 
   footer ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
     font-size: 0.7rem;
+    padding: 0;
+    margin: 0;
   }
 
   footer ul li a {
