@@ -14,6 +14,8 @@ body {
   margin: 0;
   color: #1b203d;
   background-color: #482c69;
+  display: flex;
+  flex-direction: column;
 }
 
 body h1,
@@ -96,6 +98,9 @@ header nav {
 /* Main */
 
 .main-wrapper {
+  position: relative;
+  top: 50px;
+  margin-bottom: 100px;
   display: grid;
   grid-template-columns: 785px 785px;
   grid-template-rows: 220px 200px 261px;
@@ -105,11 +110,6 @@ header nav {
     "join_today preorder"
     "join_today sell"
     "new used";
-}
-
-main {
-  position: relative;
-  top: 50px;
 }
 
 main a {
@@ -163,40 +163,7 @@ section {
   max-height: 139px;
 }
 
-.front_new {
-  height: 215px;
-  width: 785px;
-  border-radius: 15px;
-  grid-area: new;
-}
-
-.front_new div {
-  position: relative;
-  display: inline-block;
-}
-
-.front_new a {
-  margin-top: 10px;
-}
-
-.front_used {
-  height: 215px;
-  width: 785px;
-  border-radius: 15px;
-  grid-area: used;
-}
-
-.front_used div {
-  position: relative;
-  display: inline-block;
-}
-
-.front_used a {
-  margin-top: 10px;
-}
-
 .front_preorder {
-  position: relative;
   height: 220px;
   width: 785px;
   border-radius: 15px;
@@ -205,18 +172,16 @@ section {
   grid-area: preorder;
 }
 
-.front_preorder div {
-  display: inline-block;
-  padding-left: 10px;
-}
-
+.front_preorder img,
 .front_preorder p {
-  position: relative;
-  bottom: 105px;
+  max-width: 100px;
+  margin: 5px;
 }
 
-.front_preorder a {
-  margin-top: 140px;
+.front_preorder div {
+  display: flex block;
+  justify-content: left;
+  margin-left: 1.5em;
 }
 
 .front_sell {
@@ -242,6 +207,34 @@ section {
   margin: 15px 15px 0 0;
 }
 
+.front_new {
+  height: 215px;
+  width: 785px;
+  border-radius: 15px;
+  grid-area: new;
+}
+
+.front_new div,
+.front_used div {
+  display: flex block;
+  justify-content: space-evenly;
+}
+
+.front_new img,
+.front_new p,
+.front_used img,
+.front_used p {
+  max-width: 100px;
+  margin: 5px;
+}
+
+.front_used {
+  height: 215px;
+  width: 785px;
+  border-radius: 15px;
+  grid-area: used;
+}
+
 .front_small {
   max-height: 121px;
   margin-left: 29px;
@@ -258,7 +251,7 @@ footer {
   display: inline-flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 95px;
+  margin: auto 0 0 0;
 }
 
 footer ul {
@@ -269,7 +262,7 @@ footer ul {
 
 footer ul li {
   display: inline-block;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 footer ul li a {
@@ -287,18 +280,15 @@ footer ul li img {
   max-height: 15px;
   max-width: 15px;
   margin-right: 0.5rem;
-  margin-bottom: -3px;
 }
 
 /* MEDIA */
 
-@media (min-width: 1960px) {
-  footer {
-    margin-top: 455px;
-  }
-}
-
 @media (max-width: 1600px) {
+  .main-wrapper {
+    margin-bottom: 200px;
+  }
+
   header {
     max-height: 89px;
   }
@@ -348,8 +338,6 @@ footer ul li img {
 
   main {
     margin-top: 20px;
-    height: 100%;
-    margin-bottom: 200px;
   }
 
   .main-wrapper {
@@ -363,6 +351,13 @@ footer ul li img {
       "preorder"
       "sell";
   }
+
+  footer ul li,
+  footer ul li a {
+    min-width: 60px;
+    font-size: 0.7rem;
+    padding: 0 5px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -373,9 +368,12 @@ footer ul li img {
     align-items: center;
   }
 
-  .front_new div,
-  .front_used div {
-    margin-left: 0;
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 
   .media_none {
@@ -402,13 +400,28 @@ footer ul li img {
     height: auto;
   }
 
-  .front_preorder {
-    justify-content: left;
+  .front_new div,
+  .front_used div {
+    justify-content: space-evenly;
+    margin-left: 0;
+  }
+
+  .front_preorder p {
+    display: none;
+  }
+
+  .front_preorder div {
+    justify-content: space-evenly;
+    margin-left: 0;
   }
 
   .front_sell {
     align-self: auto;
     margin-bottom: auto;
+  }
+
+  .front_sell a {
+    clear: right;
   }
 
   footer {
@@ -424,10 +437,15 @@ footer ul li img {
     font-size: 0.7rem;
     padding: 0;
     margin: 0;
+    min-width: 120px;
   }
 
   footer ul li a {
     font-size: 0.7rem;
+  }
+
+  footer ul li {
+    padding: 7px;
   }
 
   footer img {
