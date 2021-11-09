@@ -260,7 +260,7 @@ main section {
 
 .front_new div,
 .front_used div {
-  display: flex block;
+  display: flex;
   justify-content: space-evenly;
 }
 
@@ -440,10 +440,6 @@ footer ul li a:hover {
     font-size: 1rem;
   }
 
-  .media_none {
-    display: none;
-  }
-
   section {
     max-width: 90%;
     max-height: 20em;
@@ -479,6 +475,14 @@ footer ul li a:hover {
     margin-left: 0;
   }
 
+  .preorder-tag {
+    height: 42px;
+    width: 42px;
+    font-size: 1.1rem;
+    bottom: -2px;
+    right: -8px;
+  }
+
   .front_sell {
     align-self: auto;
     margin-bottom: auto;
@@ -486,6 +490,12 @@ footer ul li a:hover {
 
   .front_sell a {
     clear: right;
+  }
+
+  .front_used .media_none,
+  .front_new .media_none,
+  .front_sell .media_none {
+    display: none;
   }
 
   footer {
