@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("/fonts/Bahnschrift.TTF") format("truetype");
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  width: 100%;
+  color: #1b203d;
+  background-color: #482c69;
+  display: flex;
+  flex-direction: column;
+}
+
+body h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+}
+
+/* Header */
+header {
+  background: transparent linear-gradient(180deg, #df85ff 0%, #482c69 100%)
+    no-repeat padding-box;
+  margin: 0;
+  width: 100%;
+  height: 115px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  height: 115px;
+  display: inline-flex;
+  align-items: center;
+  width: 40em;
+  justify-content: space-between;
+}
+
+header nav div {
+  display: inline-flex;
+  align-items: center;
+}
+
+#options_icon,
+#account_icon,
+#cart_icon {
+  margin: 0 20px;
+}
+
+.header_logo {
+  max-height: 147px;
+  filter: drop-shadow(0px 3px 25px #df85ff);
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  top: 0;
+}
+
+.header_logo:hover {
+  filter: drop-shadow(0px 3px 25px #fff);
+}
+
+#account_icon,
+#cart_icon,
+#options_icon {
+  max-height: 85px;
+}
+
+#options_icon:hover,
+#account_icon:hover,
+#cart_icon:hover {
+  border-radius: 50%;
+  outline: 5px solid #df85ff;
+  outline-offset: -10px;
+}
+
+.search_bar {
+  width: 348px;
+  height: 42px;
+  border-radius: 5px;
+  background: #1b203d99;
+  border: none;
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+input:focus {
+  outline: 2px solid #fff;
+}
+
+#search_icon {
+  max-height: 60px;
+  margin-top: 10px;
+}
+
+#search_icon:hover {
+  border-radius: 50%;
+  outline: 3px solid #df85ff;
+  outline-offset: -9.2px;
+}
+
+/* Main */
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+main a {
+  color: #bbc5cf;
+}
+
+main a:hover {
+  color: #fff;
+}
+
+.breadcrumb {
+  margin: 0 auto 0 15rem;
+  font-size: 1.5rem;
+}
+
+.newgames {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 0 10%;
+}
+
+.labels-group {
+  margin-top: 2em;
+  display: flex;
+  gap: 30px;
+}
+
+.label {
+  max-height: 50px;
+  max-width: auto;
+  background: #1b203d;
+  padding: 0 30px;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.label:hover {
+  color: #df85ff;
+}
+
+.active-label {
+  color: #1b203d;
+  background: #df85ff;
+}
+
+.active-label:hover {
+  color: #1b203d;
+}
+
+.allgames {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  background: #df85ff;
+  padding: 30px;
+  border-radius: 0 15px 15px 15px;
+  margin-bottom: 20px;
+}
+
+.game-container {
+  position: relative;
+}
+
+.game-container img {
+  max-width: 140px;
+}
+
+.pricetag {
+  position: absolute;
+  bottom: -2px;
+  right: -8px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #482c69;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.scroll-up {
+  font-size: 1.3rem;
+  margin: 0 auto 50px auto;
+}
+
+/* Footer */
+footer {
+  font-weight: lighter;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #1b203d;
+  max-height: 64px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto 0 0 0;
+}
+
+footer ul {
+  list-style: none;
+  color: #fff;
+  display: inline-flex;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+footer img {
+  max-height: 60px;
+}
+
+footer ul li img {
+  display: inline-block;
+  max-height: 15px;
+  max-width: 15px;
+  margin-right: 0.5rem;
+}
+
+footer ul li a:hover {
+  color: #bbc5cf;
+  text-decoration: underline;
+}

@@ -70,6 +70,8 @@ header nav div {
   filter: drop-shadow(0px 3px 25px #fff);
 }
 
+#account_icon,
+#cart_icon,
 #options_icon {
   max-height: 85px;
 }
@@ -106,14 +108,6 @@ input:focus {
   border-radius: 50%;
   outline: 3px solid #df85ff;
   outline-offset: -9.2px;
-}
-
-#account_icon {
-  max-height: 85px;
-}
-
-#cart_icon {
-  max-height: 85px;
 }
 
 /* Main */
@@ -288,14 +282,20 @@ main section {
 .pricetag {
   position: absolute;
   bottom: -2px;
-  right: -5px;
-  width: 40px;
-  height: 40px;
+  right: -8px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background: #482c69;
   color: #fff;
   overflow: hidden;
   place-items: center;
+  font-size: 1.1rem;
+}
+
+.front_used .pricetag {
+  background: #1b203d;
+  color: #5fff50;
 }
 
 .front_small {
