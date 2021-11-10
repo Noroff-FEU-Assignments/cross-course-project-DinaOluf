@@ -358,6 +358,10 @@ footer ul li a:hover {
 }
 
 @media (max-width: 850px) {
+  main {
+    margin-bottom: 150px;
+  }
+
   .breadcrumb {
     margin: 3em auto 0 1em;
   }

@@ -314,9 +314,20 @@ footer ul li a:hover {
     margin: 3em auto 0 5em;
     font-size: 1.3rem;
   }
+
+  footer ul li,
+  footer ul li a {
+    min-width: 60px;
+    font-size: 0.7rem;
+    padding: 0 5px;
+  }
 }
 
 @media (max-width: 800px) {
+  main {
+    margin-bottom: 150px;
+  }
+
   .breadcrumb {
     margin: 3em auto 0 1em;
   }
@@ -340,5 +351,45 @@ footer ul li a:hover {
 
   .allgames {
     gap: 10px 20px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  footer {
+    max-height: 20em;
+    padding: 0;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 0;
+    min-width: 120px;
+  }
+
+  footer ul li a {
+    font-size: 0.7rem;
+  }
+
+  footer ul li {
+    padding: 7px;
+  }
+
+  footer img {
+    max-height: 80px;
+  }
+
+  .rightside_footer {
+    flex-direction: column-reverse;
   }
 }
