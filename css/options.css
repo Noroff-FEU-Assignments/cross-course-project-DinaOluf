@@ -36,6 +36,7 @@ header {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 header nav {
@@ -110,67 +111,105 @@ input:focus {
   outline-offset: -9.2px;
 }
 
+#options-dropper {
+  position: absolute;
+  left: 34px;
+  top: 65px;
+  transform: scale(1.2);
+  z-index: 2;
+}
+
 /* Main */
 
 .main-wrapper {
-  position: relative;
-  top: 50px;
-  margin-bottom: 100px;
-  display: grid;
-  grid-template-columns: 785px 785px;
-  grid-template-rows: 220px 200px 261px;
-  justify-content: center;
-  gap: 2% 1%;
-  grid-template-areas:
-    "join_today preorder"
-    "join_today sell"
-    "new used";
-}
-
-main section a {
-  letter-spacing: 2.4px;
-  color: #482c69;
-  float: right;
-  margin-right: 15px;
-  font-size: 1.3rem;
-}
-
-main a:hover {
-  color: #fff;
-  text-shadow: #482c69 2px 2px 4px;
-}
-
-main h1 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  max-height: 800px;
+  flex-wrap: wrap;
+  gap: 5% 0;
   color: #fff;
 }
 
 main h2 {
-  text-align: left;
-  padding: 0;
-  margin: 6px 16px;
-  width: 220px;
+  color: #fff;
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 8px;
 }
 
-main p {
-  letter-spacing: 2px;
-  text-align: left;
+main a h2:hover {
+  color: #bbc5cf;
 }
 
-main section {
-  background-color: #df85ff;
-  margin: 0;
+main a,
+main li {
+  color: #fff;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+main li {
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+main a:hover {
+  color: #bbc5cf;
+}
+
+.options {
+  height: 700px;
+  width: 47%;
+  padding: 10px;
+  margin: 0 0 100px 30px;
+  border-radius: 0 0 15px 15px;
+  background: #1b203d;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "one ."
+    "two three";
+}
+
+.account,
+.games,
+.contact {
+  margin-left: 50px;
+  font-size: 1.2rem;
+}
+
+.account {
+  grid-area: one;
+}
+
+.games {
+  grid-area: two;
+}
+
+.contact {
+  grid-area: three;
+}
+
+.headlines {
+  display: flex;
+  flex-direction: row;
+}
+
+.headlines img {
+  height: 1.7rem;
+  width: auto;
 }
 
 .join_today {
-  background-color: transparent;
-  grid-area: join_today;
-  max-width: 785px;
-  max-height: 419px;
+  width: 40%;
+  max-height: 405px;
 }
 
 .join_today img {
-  width: 785px;
-  height: 419px;
+  width: 100%;
+  max-height: 405px;
   margin: 0;
 }
 
@@ -182,67 +221,21 @@ main section {
   padding: 10px 40px;
 }
 
-.front_games {
-  max-width: 108px;
-  max-height: 139px;
-}
-
-.front_preorder {
-  height: 220px;
-  width: 785px;
-  border-radius: 15px;
-  text-align: center;
-  margin-bottom: 0;
-  grid-area: preorder;
-}
-
-.front_preorder img,
-.front_preorder p {
-  max-width: 100px;
-  margin: 5px;
-}
-
-.game-container {
-  position: relative;
-}
-
-.preorder-tag {
-  position: absolute;
-  display: flex;
-  width: 50px;
-  height: 50px;
-  bottom: 3px;
-  right: -12px;
-  border-radius: 50%;
-  background: #482c69;
-  color: #fff;
-  overflow: hidden;
-  font-size: 1.3rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.preorder-container {
-  display: flex block;
-  justify-content: left;
-  margin-left: 1.5em;
-}
-
 .front_sell {
-  height: 153px;
-  width: 785px;
+  background: #df85ff;
+  width: 40%;
+  height: auto;
+  padding: 5px;
   border-radius: 15px;
   margin-bottom: 17px;
-  grid-area: sell;
-  align-self: end;
 }
 
 .front_sell p {
   letter-spacing: 0.5px;
-  margin-left: 16px;
+  margin-left: 10px;
   width: 572px;
   font-size: 1.1rem;
-  margin-bottom: 0;
+  color: #1b203d;
 }
 
 .front_sell img {
@@ -251,56 +244,28 @@ main section {
   margin: 15px 15px 0 0;
 }
 
-.front_new {
-  height: 215px;
-  width: 785px;
-  border-radius: 15px;
-  grid-area: new;
+.front_sell h2 {
+  font-family: "Roboto Slab", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  color: #1b203d;
 }
 
-.front_new div,
-.front_used div {
-  display: flex;
-  justify-content: space-evenly;
+.front_sell a {
+  letter-spacing: 2.4px;
+  color: #482c69;
+  text-decoration: underline;
+  float: right;
+  margin-right: 15px;
+  font-size: 1.3rem;
 }
 
-.front_new img,
-.front_new p,
-.front_used img,
-.front_used p {
-  max-width: 100px;
-  margin: 5px;
-}
-
-.front_used {
-  height: 215px;
-  width: 785px;
-  border-radius: 15px;
-  grid-area: used;
-}
-
-.pricetag {
-  position: absolute;
-  bottom: -2px;
-  right: -8px;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: #482c69;
+.front_sell a:hover {
   color: #fff;
-  overflow: hidden;
-  place-items: center;
-  font-size: 1.1rem;
+  text-shadow: #482c69 2px 2px 4px;
 }
 
-.front_used .pricetag {
-  background: #1b203d;
-  color: #5fff50;
-}
-
-.front_small {
-  max-height: 121px;
-  margin-left: 29px;
+#back-btn {
+  display: none;
 }
 
 /* Footer */
@@ -350,13 +315,7 @@ footer ul li a:hover {
   text-decoration: underline;
 }
 
-/* MEDIA */
-
 @media (max-width: 1600px) {
-  .main-wrapper {
-    margin-bottom: 200px;
-  }
-
   header {
     max-height: 90px;
   }
@@ -390,6 +349,10 @@ footer ul li a:hover {
     justify-content: center;
   }
 
+  .search-div {
+    z-index: 1;
+  }
+
   .search_bar {
     height: 30px;
     width: 40%;
@@ -400,20 +363,47 @@ footer ul li a:hover {
     height: 50px;
   }
 
-  main {
-    margin-top: 20px;
+  .main-wrapper {
+    margin-bottom: 200px;
+    margin-top: 75px;
   }
 
-  .main-wrapper {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    gap: 2%;
-    grid-template-areas:
-      "join_today"
-      "new"
-      "used"
-      "preorder"
-      "sell";
+  .options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8%;
+  }
+
+  .account,
+  .games,
+  .contact {
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+
+  .front_sell {
+    min-height: 150px;
+  }
+
+  .front_sell a {
+    clear: right;
+  }
+
+  .media_none {
+    display: none;
+  }
+
+  .account,
+  .games,
+  .contact {
+    margin-left: 20px;
+    font-size: 1.2rem;
+  }
+
+  .join_today h1 {
+    font-size: 1.3rem;
+    padding-left: 1.5%;
   }
 
   footer ul li,
@@ -426,10 +416,6 @@ footer ul li a:hover {
 
 @media (max-width: 800px) {
   .main-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
     margin-bottom: 150px;
   }
 
@@ -443,59 +429,40 @@ footer ul li a:hover {
 
   section {
     max-width: 90%;
+    max-height: 20em;
+  }
+
+  .main-wrapper {
+    flex-wrap: nowrap;
+    max-height: none;
+    height: 100%;
+  }
+
+  .options {
+    max-height: none;
+    width: 85%;
+    height: 800px;
+    margin: 0 0 0 30px;
+  }
+
+  .account,
+  .games,
+  .contact {
+    max-width: 100%;
   }
 
   .join_today {
-    max-width: 100%;
-    height: auto;
-  }
-  .join_today h1 {
-    font-size: 5.5vw;
-    padding-left: 1.5%;
-  }
-
-  .join_today img {
-    max-width: 100%;
-    padding: 0;
-    height: auto;
-  }
-
-  .front_new div,
-  .front_used div {
-    justify-content: space-evenly;
-    margin-left: 0;
-  }
-
-  .front_preorder p {
     display: none;
-  }
-
-  .front_preorder div {
-    justify-content: space-evenly;
-    margin-left: 0;
-  }
-
-  .preorder-tag {
-    height: 42px;
-    width: 42px;
-    font-size: 1.1rem;
-    bottom: -2px;
-    right: -8px;
   }
 
   .front_sell {
-    align-self: auto;
-    margin-bottom: auto;
-  }
-
-  .front_sell a {
-    clear: right;
-  }
-
-  .front_used .media_none,
-  .front_new .media_none,
-  .front_sell .media_none {
     display: none;
+  }
+
+  #back-btn {
+    display: block;
+    align-self: center;
+    text-decoration: underline;
   }
 
   footer {

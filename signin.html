@@ -25,7 +25,7 @@
     </header>
     <main class="main-wrapper">
         <section class="login">
-                <h1>Log In</h1>
+                <h1>Sign In</h1>
                 <form action="submit.php" method="POST">
                     <div>
                         <label for="email">E-mail</label>
@@ -35,8 +35,12 @@
                         <label for="password">Password</label>
                         <input type="password" name="password">
                     </div>
-                    <input type="submit" value="Log In" id="login-btn">
-                    <a href="signin.html">Don't have an account yet? Sign in!</a>
+                    <div>
+                        <label for="confirmpassword">Confirm Password</label>
+                        <input type="password" name="confirmpassword">
+                    </div>
+                    <input type="submit" value="Sign In" id="login-btn">
+                    <a href="login.html">Already have an account? Log in!</a>
                 </form>
         </section>
     </main>
