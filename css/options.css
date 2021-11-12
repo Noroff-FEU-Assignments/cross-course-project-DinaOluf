@@ -43,7 +43,6 @@ header nav {
   height: 115px;
   display: inline-flex;
   align-items: center;
-  width: 40em;
   justify-content: space-between;
 }
 
@@ -203,13 +202,15 @@ main a:hover {
 }
 
 .join_today {
+  position: relative;
   width: 40%;
-  max-height: 405px;
+  max-height: 30em;
 }
 
 .join_today img {
   width: 100%;
-  max-height: 405px;
+  max-height: 30em;
+  max-width: 56em;
   margin: 0;
 }
 
@@ -218,12 +219,14 @@ main a:hover {
   font-size: 2rem;
   color: #fff;
   text-shadow: #00000080 0 3px 6px;
-  padding: 10px 40px;
+  left: 2%;
+  top: 5%;
 }
 
 .front_sell {
   background: #df85ff;
   width: 40%;
+  max-width: 55.5em;
   height: auto;
   padding: 5px;
   border-radius: 15px;
@@ -402,8 +405,7 @@ footer ul li a:hover {
   }
 
   .join_today h1 {
-    font-size: 1.3rem;
-    padding-left: 1.5%;
+    font-size: 1.4rem;
   }
 
   footer ul li,

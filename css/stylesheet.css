@@ -127,7 +127,7 @@ input:focus {
     "new used";
 }
 
-main section a {
+.seemore {
   letter-spacing: 2.4px;
   color: #482c69;
   float: right;
@@ -135,7 +135,7 @@ main section a {
   font-size: 1.3rem;
 }
 
-main a:hover {
+.seemore:hover {
   color: #fff;
   text-shadow: #482c69 2px 2px 4px;
 }
@@ -152,7 +152,6 @@ main h2 {
 }
 
 main p {
-  letter-spacing: 2px;
   text-align: left;
 }
 
@@ -166,6 +165,11 @@ main section {
   grid-area: join_today;
   max-width: 785px;
   max-height: 419px;
+  position: relative;
+}
+
+.join_today a {
+  margin-right: 0;
 }
 
 .join_today img {
@@ -179,7 +183,8 @@ main section {
   font-size: 2rem;
   color: #fff;
   text-shadow: #00000080 0 3px 6px;
-  padding: 10px 40px;
+  left: 1.2em;
+  top: 1em;
 }
 
 .front_games {
@@ -291,6 +296,7 @@ main section {
   overflow: hidden;
   place-items: center;
   font-size: 1.1rem;
+  letter-spacing: 2px;
 }
 
 .front_used .pricetag {
@@ -451,7 +457,8 @@ footer ul li a:hover {
   }
   .join_today h1 {
     font-size: 5.5vw;
-    padding-left: 1.5%;
+    left: 0.2em;
+    top: 0.3em;
   }
 
   .join_today img {

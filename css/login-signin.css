@@ -179,6 +179,7 @@ main input {
   width: 100px;
   box-shadow: #0000007c 2px 2px 5px, inset #ffffff7c 2px 2px 5px;
   cursor: pointer;
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #login-btn:hover {

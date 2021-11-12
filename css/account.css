@@ -156,13 +156,15 @@ main a:hover {
 .account-wrapper div {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-self: center;
+  width: 90%;
   height: auto;
 }
 
 #postcity {
   display: inline-flex;
   flex-direction: row-reverse;
+  width: 100%;
   gap: 5%;
 }
 
@@ -214,6 +216,7 @@ label {
   cursor: pointer;
   margin-top: 10px;
   align-self: flex-end;
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .button-cta:hover {
@@ -352,6 +355,16 @@ footer ul li a:hover {
 
   main {
     margin-top: 80px;
+  }
+
+  #cart1 {
+    height: 1.8em;
+    width: 1.8em;
+    position: absolute;
+    right: 20%;
+    top: 33em;
+    top: 3em;
+    right: 1.1em;
   }
 
   footer ul li,
