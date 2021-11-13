@@ -228,7 +228,7 @@ main section {
 }
 
 .preorder-container {
-  display: flex block;
+  display: flex;
   justify-content: left;
   margin-left: 1.5em;
 }
