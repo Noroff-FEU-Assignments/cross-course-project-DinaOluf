@@ -412,3 +412,18 @@ footer ul li a:hover {
     flex-direction: column-reverse;
   }
 }
+
+@media (max-width: 420px) {
+  #city {
+    width: 60%;
+  }
+
+  #poscod {
+    width: 35%;
+  }
+
+  .account-wrapper {
+    width: 90%;
+    padding: 10px;
+}
+}
