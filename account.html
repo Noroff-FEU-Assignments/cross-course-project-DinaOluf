@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Edit your account information or see your purchase history." />
+    <title>Game Hub | Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link href="./css/account.css" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./options.html"><img src="../images/Options-icon.png" id="options_icon" alt="More options icon"></a>
+            <div><input class="search_bar" type="text">
+            <a href="./searchresults.html"><img src="../images/Search-icon.png" id="search_icon" alt="Search icon"></a></div>
+        </nav>
+        <a href="./index.html"><img src="../images/GameHub_Logo.png" class="header_logo" alt="Game Hub's logo"></a>
+        <section>
+            <a href="./account.html"><img src="../images/Account-icon.png" id="account_icon" alt="Account icon"></a>
+            <a href="./checkout.html"><img src="../images/Cart-icon.png" id="cart_icon" alt="Cart icon"></a>
+        </section>
+    </header>
+    <main class="main-wrapper">
+        <section class="account-wrapper">
+            <h1>Account</h1>
+            <div>
+                <h2>Information</h2>
+                <h3>Email</h3>
+                <p>Email@adress.com</p>
+                <h3>Password</h3>
+                <p>********</p>
+                <button class="button-cta">Change Password</button>
+            </div>
+            <div>
+                <h2>Additional Information</h2>
+                <label for="name">Full Name</label>
+                <input type="text" name="name">
+                <label for="address">Address</label>
+                <input type="text" name="address">
+                <div id="postcity">
+                    <div id="poscod">
+                        <label for="poscod">Postal Code</label>
+                        <input type="text" name="poscod">
+                    </div>
+                    <div id="city">
+                        <label for="city">City</label>
+                        <input type="text" name="city">
+                    </div>
+                </div>
+                <button class="button-cta">Save</button>
+            </div>
+            <div class="orders">
+                <h2>Placed Orders</h2>
+                <table cellspacing="0" cellpadding="0">
+                    <tr>
+                        <th>Order #</th>
+                        <th>Date</th>
+                        <th>Subtotal</th>
+                        <th> </th>
+                    </tr>
+                    <tr>
+                        <td>0001234</td>
+                        <td>17.08.21</td>
+                        <td>15€</td>
+                        <td><a href="#">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>0002345</td>
+                        <td>03.06.21</td>
+                        <td>35€</td>
+                        <td><a href="#">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>0003456</td>
+                        <td>21.03.21</td>
+                        <td>65€</td>
+                        <td><a href="#">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>0004567</td>
+                        <td>01.01.21</td>
+                        <td>25€</td>
+                        <td><a href="#">Details</a></td>
+                    </tr>
+                </table>
+                <a href="#" id="cta">See More</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><img src="../images/Account-icon-link.png" alt="Account icon"><a href="./account.html">Account</a></li>
+            <li><a href="./login.html">Log in/Sign in</a></li>
+            <li><a href="./account.html">My Account</a></li>
+            <li><a href="./checkout.html">Checkout</a></li>
+        </ul>
+        <a href="./index.html"><img src="../images/GameHub_LogoINVERT.png" alt="An inverted version of Game Hub's logo"></a>
+        <ul class="rightside_footer">
+            <li>+1234567890</li>
+            <li>Service@GameHub.com</li>
+            <li><img src="../images/Mail-icon.png" alt="Mail icon"><a href="./contact.html">Contact us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

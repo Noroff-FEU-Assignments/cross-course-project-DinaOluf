@@ -1,0 +1,539 @@
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("/fonts/Bahnschrift.TTF") format("truetype");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  width: 100%;
+  color: #1b203d;
+  background-color: #482c69;
+  display: flex;
+  flex-direction: column;
+}
+
+body h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+}
+
+/* Header */
+header {
+  background: transparent linear-gradient(180deg, #df85ff 0%, #482c69 100%)
+    no-repeat padding-box;
+  margin: 0;
+  width: 100%;
+  height: 115px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  height: 115px;
+  display: inline-flex;
+  align-items: center;
+  width: 40em;
+  justify-content: space-between;
+}
+
+header nav div {
+  display: inline-flex;
+  align-items: center;
+}
+
+#options_icon,
+#account_icon,
+#cart_icon {
+  margin: 0 20px;
+}
+
+.header_logo {
+  max-height: 147px;
+  filter: drop-shadow(0px 3px 25px #df85ff);
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  top: 0;
+}
+
+.header_logo:hover {
+  filter: drop-shadow(0px 3px 25px #fff);
+}
+
+#account_icon,
+#cart_icon,
+#options_icon {
+  max-height: 85px;
+}
+
+#options_icon:hover,
+#account_icon:hover,
+#cart_icon:hover {
+  border-radius: 50%;
+  outline: 5px solid #df85ff;
+  outline-offset: -10px;
+}
+
+.search_bar {
+  width: 348px;
+  height: 42px;
+  border-radius: 5px;
+  background: #1b203d99;
+  border: none;
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+input:focus {
+  outline: 2px solid #fff;
+}
+
+#search_icon {
+  max-height: 60px;
+  margin-top: 10px;
+}
+
+#search_icon:hover {
+  border-radius: 50%;
+  outline: 3px solid #df85ff;
+  outline-offset: -9.2px;
+}
+
+/* Main */
+
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  color: #1b203d;
+}
+
+main h1 {
+  color: #fff;
+  margin: 0 auto 10px 20%;
+}
+
+main a {
+  color: #bbc5cf;
+}
+
+main a:hover {
+  color: #fff;
+}
+
+.details-wrapper {
+  margin: 0 20% 150px 20%;
+  background: #df85ff;
+  padding: 20px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 275px 1fr 1fr;
+  grid-template-rows: 80px 150px 100px 180px;
+  justify-content: center;
+  gap: 2% 1%;
+  grid-template-areas:
+    "game gametitle ."
+    "game . gameprice"
+    "game .  addcart"
+    "desc desc desc";
+}
+
+.game {
+  grid-area: game;
+}
+
+#forgelegend {
+  height: 350px;
+}
+
+.gametitle {
+  grid-area: gametitle;
+}
+
+.gametitle p {
+  margin: 0;
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+.gametitle h2 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.gameprice {
+  grid-area: gameprice;
+  background: #1b203d8a;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gameprice a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.usednew-container {
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.usednew {
+  background: #1b203d;
+  height: 20px;
+  padding: 10px 40px;
+  border-radius: 20px;
+  box-shadow: #0000007c 2px 2px 5px, inset #ffffff7c 2px 2px 5px;
+}
+
+.usednew:hover {
+  background: #482c69;
+}
+
+#activeprice {
+  background: #df85ff;
+  box-shadow: inset #0000007c 2px 2px 5px;
+  color: #1b203d;
+}
+
+#activeprice:hover {
+  background: #df85ff;
+  box-shadow: inset #0000007c 2px 2px 5px;
+}
+
+hr {
+  border-top: 1px solid #bbc5cf;
+  width: 90%;
+}
+
+.price {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.price p {
+  padding: 0 25px;
+  font-size: 1.2rem;
+}
+
+.addcart {
+  grid-area: addcart;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.addcart div:hover {
+  background: #482c69;
+}
+
+.addcart div {
+  background: #1b203d;
+  height: 20px;
+  width: 80px;
+  padding: 10px 40px;
+  margin: 50px 0;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: #0000007c 2px 2px 5px, inset #ffffff7c 2px 2px 5px;
+}
+
+#checkbox {
+  background: #1b203d;
+  height: 20px;
+  width: 80px;
+  padding: 10px 40px;
+  margin: 50px 0;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: #0000007c 2px 2px 5px, inset #ffffff7c 2px 2px 5px;
+}
+
+#checkbox:hover {
+  background: #482c69;
+  cursor: pointer;
+}
+
+#hidden-checkbox,
+#cart1 {
+  display: none; /*HEY*/
+}
+
+#cart1 {
+  height: 1.8em;
+  width: 1.8em;
+  position: absolute;
+  right: 20%;
+  top: 33em;
+}
+
+#hidden-checkbox:checked ~ #cart1 {
+  display: block;
+  animation: cart1 1 1s forwards;
+}
+
+@keyframes cart1 {
+  100% {
+    top: 3.8em;
+    right: 1.1em;
+  }
+}
+
+.desc {
+  grid-area: desc;
+}
+
+/* Footer */
+footer {
+  font-weight: lighter;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #1b203d;
+  max-height: 64px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto 0 0 0;
+}
+
+footer ul {
+  list-style: none;
+  color: #fff;
+  display: inline-flex;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+footer img {
+  max-height: 60px;
+}
+
+footer ul li img {
+  display: inline-block;
+  max-height: 15px;
+  max-width: 15px;
+  margin-right: 0.5rem;
+}
+
+footer ul li a:hover {
+  color: #bbc5cf;
+  text-decoration: underline;
+}
+
+@media (max-width: 1600px) {
+  header {
+    max-height: 90px;
+  }
+
+  .header_logo {
+    max-height: 90px;
+  }
+
+  #account_icon {
+    display: none;
+  }
+
+  #cart_icon,
+  #options_icon {
+    top: 7px;
+    max-height: 70px;
+  }
+
+  header nav,
+  header section {
+    max-height: 90px;
+  }
+
+  header nav div {
+    position: absolute;
+    top: 100px;
+    height: 45px;
+    width: 100%;
+    background-color: #df85ff;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .search_bar {
+    height: 30px;
+    width: 40%;
+  }
+
+  #search_icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .main-wrapper {
+    margin-bottom: 200px;
+    margin-top: 70px;
+  }
+
+  #cart1 {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  @keyframes cart1 {
+    100% {
+      top: 3em;
+      right: 1.1em;
+    }
+  }
+
+  footer ul li,
+  footer ul li a {
+    min-width: 60px;
+    font-size: 0.7rem;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 1250px) {
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  .details-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 150px 100px 300px;
+    grid-template-areas:
+      "game gametitle"
+      "game gameprice"
+      "game addcart"
+      "desc desc";
+  }
+
+  #forgelegend {
+    height: 250px;
+  }
+
+  .gametitle h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  main h1 {
+    margin-left: 10%;
+  }
+
+  .details-wrapper {
+    grid-template-columns: 47% 47%;
+    gap: 1% 1%;
+    padding: 10px;
+    margin: 0 5% 150px 5%;
+    grid-template-rows: 80px 120px 80px 1fr;
+  }
+
+  #forgelegend {
+    height: auto;
+    width: 80%;
+    min-width: 150px;
+    max-width: 230px;
+  }
+
+  .gametitle h2,
+  .gametitle p {
+    font-size: 1rem;
+  }
+
+  .usednew-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0;
+  }
+
+  .usednew-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 15px;
+    font-size: 0.9rem;
+  }
+
+  .usednew {
+    padding: 5px 30px;
+  }
+
+  .price p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .addcart div {
+    padding: 5px 20px;
+    margin: 10px 0;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #cart1 {
+    right: 10%;
+    top: 30em;
+  }
+
+  footer {
+    max-height: 20em;
+    padding: 0;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 0;
+    min-width: 120px;
+  }
+
+  footer ul li a {
+    font-size: 0.7rem;
+  }
+
+  footer ul li {
+    padding: 7px;
+  }
+
+  footer img {
+    max-height: 80px;
+  }
+
+  .rightside_footer {
+    flex-direction: column-reverse;
+  }
+}
