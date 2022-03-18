@@ -161,6 +161,16 @@ footer ul li a:hover {
   text-decoration: underline;
 }
 
+.options-menu {
+  position: absolute;
+  top: 4.5rem;
+  left: 2.5rem;
+  width: 200px;
+  height: 400px;
+  background: #1b203d;
+  color: #bbc5cf;
+}
+
 /*MEDIA*/
 @media (max-width: 1600px) {
   header {
