@@ -32,7 +32,7 @@ main a:hover {
 .account-wrapper {
   background: #df85ff;
   width: 50%;
-  height: 83em;
+  height: 60em;
   padding: 20px;
   border-radius: 15px;
   display: flex;
@@ -40,7 +40,8 @@ main a:hover {
   justify-content: space-between;
 }
 
-.account-wrapper div {
+.account-wrapper div,
+.account-wrapper form {
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -48,22 +49,8 @@ main a:hover {
   height: auto;
 }
 
-#postcity {
-  display: inline-flex;
-  flex-direction: row-reverse;
-  width: 100%;
-  gap: 5%;
-}
-
-#poscod {
-  width: 30%;
-}
-
-#city {
-  width: 65%;
-}
-
-.account-wrapper div input {
+.account-wrapper div input,
+.account-wrapper form input {
   color: #fff;
   font-size: 1.2rem;
   background: #1b203d99;
@@ -72,19 +59,17 @@ main a:hover {
   height: 40px;
 }
 
-.account-wrapper div p {
+.account-wrapper div p,
+.account-wrapper form p {
   background: #1b203d99;
   padding: 15px;
   border-radius: 5px;
   color: #fff;
 }
 
-.account-wrapper div h3 {
+.account-wrapper div h3,
+.account-wrapper form h3 {
   margin-bottom: 0;
-}
-
-label {
-  margin-top: 20px;
 }
 
 .button-cta {
@@ -104,6 +89,12 @@ label {
 
 .button-cta:hover {
   background: #482c69;
+}
+
+.button-cta:active {
+  background: white;
+  color: #1b203d;
+  box-shadow: #df85ff 2px 2px 5px, inset #1b203d 2px 2px 5px;
 }
 
 table {
@@ -148,6 +139,14 @@ table tr:nth-child(even) {
 @media (max-width: 1600px) {
   main {
     margin-top: 80px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #name .first-name-container,
+  #name .last-name-container {
+    flex-shrink: 1;
+    width: 47.5%;
   }
 }
 
