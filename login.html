@@ -27,16 +27,19 @@
     <main class="main-wrapper">
         <section class="login">
                 <h1>Log In</h1>
+                <div class="success-container"></div>
                 <form>
                     <div>
                         <label for="email">E-mail</label>
-                        <input type="email" name="email">
+                        <input type="email" id="email" name="email">
+                        <div class="email-err"></div>
                     </div>
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" name="password">
+                        <input type="password" id="password" name="password">
+                        <div class="password-err"></div>
                     </div>
-                    <input type="submit" value="Log In" id="login-btn">
+                    <button id="login-btn">Log In</button>
                     <a href="./signin.html">Don't have an account yet? Sign up!</a>
                 </form>
         </section>
@@ -54,5 +57,7 @@
             <li><img src="../images/Mail-icon.png" alt="Mail icon"><a href="/contact.html">Contact us</a></li>
         </ul>
     </footer>
+    <script src="./js/global.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

@@ -110,6 +110,56 @@ input:focus {
   outline-offset: -9.2px;
 }
 
+.hidden-menu {
+  position: absolute;
+  top: 5rem;
+  left: 2.5rem;
+}
+
+.options-menu {
+  display: block;
+  width: 350px;
+  height: 400px;
+  background: #1b203d;
+  color: #ffffff;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: larger;
+  border-radius: 0 10px 10px 10px;
+}
+
+.options-menu div {
+  margin-left: 1rem;
+}
+
+.options-menu .menu-heading {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  gap: 7px;
+  text-decoration: underline;
+}
+
+.options-menu h3 {
+  margin: 0;
+}
+
+.options-menu .menu-heading img {
+  width: 2rem;
+  height: 1.5rem;
+}
+
+.options-menu ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.options-menu a {
+  color: #bbc5cf;
+}
+
 /* Footer */
 footer {
   font-weight: lighter;
@@ -159,16 +209,6 @@ footer ul li img {
 footer ul li a:hover {
   color: #bbc5cf;
   text-decoration: underline;
-}
-
-.options-menu {
-  position: absolute;
-  top: 4.5rem;
-  left: 2.5rem;
-  width: 200px;
-  height: 400px;
-  background: #1b203d;
-  color: #bbc5cf;
 }
 
 /*MEDIA*/
