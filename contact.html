@@ -28,16 +28,22 @@
     <main class="main-wrapper">
         <section class="contact">
                 <h1>Contact Us</h1>
+                <div class="success-container"></div>
                 <form>
                     <div>
                         <label for="email">E-mail</label>
-                        <input type="email" name="email">
+                        <input type="email" id="email" name="email">
+                        <div class="email-err"></div>
                     </div>
                     <div>
                         <label for="textarea">Description</label>
-                        <textarea type="textarea" name="textarea" id="textarea"></textarea>
+                        <textarea type="textarea" id="textarea" name="textarea"></textarea>
+                        <div>
+                            <div class="character-count">Character count: 0/500</div>
+                            <div class="textarea-err"></div>
+                        </div>
                     </div>
-                    <input type="submit" value="Send" id="send-btn">
+                    <button type="submit" id="send-btn">Send</button>
                 </form>
         </section>
     </main>
@@ -55,5 +61,6 @@
         </ul>
     </footer>
     <script src="/js/global.js"></script>
+    <script src="/js/contact.js"></script>
 </body>
 </html>

@@ -36,17 +36,21 @@
                         </div>
                         <img src="/images/Money-back-icon.png" alt="A hand holding a coin" id="moneyicon">
                     </div>
+                    <div class="success-container"></div>
                     <div class="selldiv">
-                        <label for="gametitle">Game Title</label>
-                        <input type="text" name="gametitle">
+                        <label for="game-title">Game Title</label>
+                        <input type="text" id="game-title" name="game-title">
+                        <div class="game-title-err"></div>
                     </div>
                     <div class="selldiv">
                         <label for="money">Estimated Money</label>
-                        <input type="text" name="money">
+                        <input type="text" id="estimated-money" name="money">
+                        <div class="estimated-money-err"></div>
                     </div>
                     <div class="sellchecker">
                         <input type="checkbox" id="checkbox" required>
                         <label for="checkbox"> I Agree to <a href="#">Terms of Service</a></label>
+                        <div class="checkbox-err"></div>
                     </div>
                     <div class="selldiv2">
                         <input type="submit" value="Sell" id="send-btn">

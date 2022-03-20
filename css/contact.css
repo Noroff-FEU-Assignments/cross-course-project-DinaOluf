@@ -74,6 +74,11 @@ main input {
   outline: 2px solid #fff;
 }
 
+.contact form .character-count,
+.contact form .textarea-err {
+  width: 110%;
+}
+
 #send-btn {
   color: #fff;
   font-size: 1rem;

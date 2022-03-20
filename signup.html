@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link href="./css/global.css" rel="stylesheet">
-    <link href="./css/login-signin.css" rel="stylesheet"> 
+    <link href="./css/login-signup.css" rel="stylesheet"> 
 </head>
 <body>
     <header>
@@ -28,18 +28,22 @@
     <main class="main-wrapper">
         <section class="login">
                 <h1>Sign Up</h1>
+                <div class="success-container"></div>
                 <form>
                     <div>
                         <label for="email">E-mail</label>
                         <input type="email" id="email" name="email">
+                        <div class="email-err"></div>
                     </div>
                     <div>
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password">
+                        <div class="password-err"></div>
                     </div>
                     <div>
                         <label for="confirm-password">Confirm Password</label>
                         <input type="password" id="confirm-password" name="confirm-password">
+                        <div class="confirm-password-err"></div>
                     </div>
                     <button value="Sign Up" id="login-btn">Sign Up</button>
                     <a href="./login.html">Already have an account? Log in!</a>
@@ -60,5 +64,6 @@
         </ul>
     </footer>
     <script src="/js/global.js"></script>
+    <script src="/js/signup.js"></script>
 </body>
 </html>
