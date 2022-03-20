@@ -30,7 +30,7 @@ function addMenuHtml() {
     <a href="../contact.html">
         <div class="menu-heading">
             <img src="/images/Mail-icon.png"></img>
-            <h3>Contact us</h3>
+            <h3 class="menu-contact-heading">Contact us</h3>
         </div>
     </a>
     <ul>

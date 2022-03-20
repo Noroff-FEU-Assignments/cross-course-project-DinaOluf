@@ -47,6 +47,10 @@ main a:hover {
   height: auto;
 }
 
+.login form div div {
+  width: 100%;
+}
+
 main input {
   color: #fff;
   font-size: 1.2rem;
@@ -54,6 +58,18 @@ main input {
   border: none;
   border-radius: 5px;
   height: 45px;
+}
+
+.success-container {
+  border-radius: 3px;
+  background: rgb(108, 255, 108);
+  font-size: 1.1em;
+}
+
+.error-form {
+  border-radius: 3px;
+  background: rgb(255, 108, 108);
+  font-size: 1.1em;
 }
 
 #login-btn {

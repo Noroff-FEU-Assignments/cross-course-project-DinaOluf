@@ -26,8 +26,8 @@ function checkFormErrors() {
         emailError.innerHTML = "";
       }
 
-    if (textArea.textLength > 500) {
-        textAreaError.innerHTML = '<span class="error-form">- Description can not be more than 500 characters</span>';
+    if (textArea.textLength < 20 || textArea.textLength > 500) {
+        textAreaError.innerHTML = '<span class="error-form">- Description must be 20-500 characters</span>';
     } else {
         textAreaError.innerHTML = ""
     }
@@ -40,7 +40,7 @@ function submitForm(event) {
   
     checkFormErrors();
   
-    if(validateEmail(email.value) && textArea.textLength <= 500) {
+    if(validateEmail(email.value) && textArea.textLength > 20 && textArea.textLength <= 500) {
       successContainer.innerHTML = '<div class="success-msg">You successfully submitted!</div>';
       form.reset();
     } else {

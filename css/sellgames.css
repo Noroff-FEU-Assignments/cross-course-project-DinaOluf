@@ -64,6 +64,18 @@ form p {
   width: 90%;
 }
 
+.success-container {
+  border-radius: 3px;
+  background: rgb(108, 255, 108);
+  font-size: 1.1em;
+}
+
+.error-form {
+  border-radius: 3px;
+  background: rgb(255, 108, 108);
+  font-size: 1.1em;
+}
+
 main input {
   color: #fff;
   font-size: 1.2rem;

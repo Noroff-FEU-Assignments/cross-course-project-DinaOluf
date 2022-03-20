@@ -10,6 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link href="./css/global.css" rel="stylesheet">
     <link href="./css/sellgames.css" rel="stylesheet"> 
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2855905,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 <body>
     <header>
@@ -43,17 +53,17 @@
                         <div class="game-title-err"></div>
                     </div>
                     <div class="selldiv">
-                        <label for="money">Estimated Money</label>
+                        <label for="money">Estimated Money ($)</label>
                         <input type="text" id="estimated-money" name="money">
                         <div class="estimated-money-err"></div>
                     </div>
                     <div class="sellchecker">
-                        <input type="checkbox" id="checkbox" required>
+                        <input type="checkbox" id="checkbox">
                         <label for="checkbox"> I Agree to <a href="#">Terms of Service</a></label>
                         <div class="checkbox-err"></div>
                     </div>
                     <div class="selldiv2">
-                        <input type="submit" value="Sell" id="send-btn">
+                        <button id="send-btn">Sell</button>
                         <p>Regain money from games you have finished with!</p>
                     </div>
                 </form>
@@ -73,5 +83,6 @@
         </ul>
     </footer>
     <script src="/js/global.js"></script>
+    <script src="/js/sellgames.js"></script>
 </body>
 </html>

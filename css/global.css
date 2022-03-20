@@ -140,7 +140,6 @@ input:focus {
   align-items: center;
   margin: 0;
   gap: 7px;
-  text-decoration: underline;
 }
 
 .options-menu h3 {
@@ -159,6 +158,10 @@ input:focus {
 
 .options-menu a {
   color: #bbc5cf;
+}
+
+.menu-contact-heading {
+  text-decoration: underline;
 }
 
 /* Footer */

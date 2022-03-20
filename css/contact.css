@@ -79,6 +79,22 @@ main input {
   width: 110%;
 }
 
+.contact form .email-err {
+  width: 100%;
+}
+
+.success-container {
+  border-radius: 3px;
+  background: rgb(108, 255, 108);
+  font-size: 1.1em;
+}
+
+.error-form {
+  border-radius: 3px;
+  background: rgb(255, 108, 108);
+  font-size: 1.1em;
+}
+
 #send-btn {
   color: #fff;
   font-size: 1rem;
