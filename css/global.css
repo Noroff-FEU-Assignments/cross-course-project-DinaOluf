@@ -82,6 +82,7 @@ header nav div {
   border-radius: 50%;
   outline: 5px solid #df85ff;
   outline-offset: -10px;
+  cursor: pointer;
 }
 
 .search_bar {
@@ -110,7 +111,7 @@ input:focus {
   outline-offset: -9.2px;
 }
 
-.hidden-menu {
+#hidden-menu {
   position: absolute;
   top: 5rem;
   left: 2.5rem;

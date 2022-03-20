@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <a href="./options.html"><img src="../images/Options-icon.png" id="options_icon" alt="More options icon"></a>
+            <img src="../images/Options-icon.png" id="options_icon" alt="More options icon">
             <div><input class="search_bar" type="text">
             <a href="./searchresults.html"><img src="../images/Search-icon.png" id="search_icon" alt="Search icon"></a></div>
         </nav>
@@ -23,6 +23,7 @@
             <a href="./account.html"><img src="../images/Account-icon.png" id="account_icon" alt="Account icon"></a>
             <a href="./checkout.html"><img src="../images/Cart-icon.png" id="cart_icon" alt="Cart icon"></a>
         </section>
+        <div id="hidden-menu"></div>
     </header>
     <main class="main-wrapper">
         <section class="login">
@@ -30,17 +31,17 @@
                 <form>
                     <div>
                         <label for="email">E-mail</label>
-                        <input type="email" name="email">
+                        <input type="email" id="email" name="email">
                     </div>
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" name="password">
+                        <input type="password" id="password" name="password">
                     </div>
                     <div>
-                        <label for="confirmpassword">Confirm Password</label>
-                        <input type="password" name="confirmpassword">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
                     </div>
-                    <input type="submit" value="Sign Up" id="login-btn">
+                    <button value="Sign Up" id="login-btn">Sign Up</button>
                     <a href="./login.html">Already have an account? Log in!</a>
                 </form>
         </section>
@@ -58,5 +59,6 @@
             <li><img src="../images/Mail-icon.png" alt="Mail icon"><a href="/contact.html">Contact us</a></li>
         </ul>
     </footer>
+    <script src="/js/global.js"></script>
 </body>
 </html>
