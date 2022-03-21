@@ -93,15 +93,24 @@ hr {
   height: 30px;
 }
 
+.cross:hover {
+  border-radius: 50%;
+  outline: 2px solid #bbc5cf;
+  outline-offset: -6px;
+  cursor: pointer;
+}
+
 .cart-item a {
   width: 30px;
   height: 30px;
 }
 
-.cross:hover {
-  border-radius: 50%;
-  outline: 2px solid #bbc5cf;
-  outline-offset: -6px;
+.links {
+  color: #482c69;
+}
+
+.links:hover {
+  color: #fff;
 }
 
 .subtotal {
@@ -137,8 +146,14 @@ hr {
   height: 1.8em;
   width: 1.8em;
   position: absolute;
+  right: 1.25em;
   top: 3.8em;
-  right: 1.1em;
+  background: #bbc5cf;
+  color: #1b203d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1600px) {

@@ -38,7 +38,7 @@
     <main class="main-wrapper">
         <section class="checkout-wrapper">
             <div class="divider">
-                <img src="/images/1cart.png" id="cart1" alt="1 item in cart">
+                <a href="/checkout.html"><div id="cart1">1</div></a>
                 <h1>Checkout</h1>
                 <h2>Your Cart</h2>
                 <hr>
@@ -60,7 +60,7 @@
                             <p class="bold">15€</p>
                         </div>
                     </div>
-                    <a href="#"><img src="/images/Cross-icon.png" class="cross"></a>
+                    <img src="/images/Cross-icon.png" class="cross">
                 </div>
                 <hr>
             </div>
@@ -68,12 +68,12 @@
                 <hr>
                 <div class="subtotal">
                     <h3>Subtotal</h3>
-                    <h3>15€</h3>
+                    <h3 class="total-price">15€</h3>
                 </div>
                 <hr>
                 <div class="checkout-btn">
                     <a href="./index.html" class="button-cta">Shop More</a>
-                    <a href="./checkout_success.html" class="button-cta">Checkout</a>
+                    <a href="./checkout_success.html" class="button-cta checkout-now">Checkout</a>
                 </div>
             </div>
         </section>
@@ -92,5 +92,6 @@
         </ul>
     </footer>
     <script src="/js/global.js"></script>
+    <script src="/js/checkout.js"></script>
 </body>
 </html>

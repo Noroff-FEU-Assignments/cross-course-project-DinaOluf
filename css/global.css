@@ -129,6 +129,17 @@ input:focus {
   justify-content: space-evenly;
   font-size: larger;
   border-radius: 0 10px 10px 10px;
+  overflow: hidden;
+  animation: menu 1 0.5s forwards;
+}
+
+@keyframes menu {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 400px;
+  }
 }
 
 .options-menu div {
@@ -140,6 +151,7 @@ input:focus {
   align-items: center;
   margin: 0;
   gap: 7px;
+  width: 300px;
 }
 
 .options-menu h3 {
@@ -154,6 +166,7 @@ input:focus {
 .options-menu ul li {
   list-style: none;
   margin: 10px 0;
+  width: 300px;
 }
 
 .options-menu a {
@@ -162,6 +175,10 @@ input:focus {
 
 .menu-contact-heading {
   text-decoration: underline;
+}
+
+.options-menu .topics {
+  width: 300px;
 }
 
 /* Footer */
@@ -189,7 +206,7 @@ footer ul {
 }
 
 footer ul li {
-  display: inline-block;
+  display: inline-flex;
   padding: 0 15px;
 }
 
@@ -260,6 +277,10 @@ footer ul li a:hover {
     height: 50px;
   }
 
+  #hidden-menu {
+    top: 4rem;
+  }
+
   main {
     margin-top: 20px;
   }
@@ -273,6 +294,25 @@ footer ul li a:hover {
 }
 
 @media (max-width: 800px) {
+  #hidden-menu {
+    left: 0;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .options-menu {
+    overflow: hidden;
+    animation: menu 1 1s forwards;
+  }
+
+  @keyframes menu {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 350px;
+    }
+  }
+
   footer {
     max-height: 20em;
     padding: 0;
