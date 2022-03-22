@@ -89,14 +89,14 @@ hr {
 }
 
 .cross {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
+  filter: drop-shadow(1px 1px 1px #0000005b);
 }
 
 .cross:hover {
   border-radius: 50%;
   outline: 2px solid #bbc5cf;
-  outline-offset: -6px;
   cursor: pointer;
 }
 
@@ -146,8 +146,8 @@ hr {
   height: 1.8em;
   width: 1.8em;
   position: absolute;
-  right: 1.25em;
-  top: 3.8em;
+  right: 0.8em;
+  top: 3.9em;
   background: #bbc5cf;
   color: #1b203d;
   border-radius: 50%;
@@ -162,8 +162,8 @@ hr {
   }
 
   #cart1 {
-    top: 3em;
-    right: 1.1em;
+    top: 3.3em;
+    right: 1em;
     width: 1.5em;
     height: 1.5em;
   }

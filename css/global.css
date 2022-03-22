@@ -73,7 +73,8 @@ header nav div {
 #account_icon,
 #cart_icon,
 #options_icon {
-  max-height: 85px;
+  max-height: 70px;
+  filter: drop-shadow(2px 2px 2px #0000005b);
 }
 
 #options_icon:hover,
@@ -81,7 +82,6 @@ header nav div {
 #cart_icon:hover {
   border-radius: 50%;
   outline: 5px solid #df85ff;
-  outline-offset: -10px;
   cursor: pointer;
 }
 
@@ -101,14 +101,14 @@ input:focus {
 }
 
 #search_icon {
-  max-height: 60px;
-  margin-top: 10px;
+  max-height: 44px;
+  margin: 6px 0 0 10px;
+  filter: drop-shadow(1px 1px 1px #0000005b);
 }
 
 #search_icon:hover {
   border-radius: 50%;
   outline: 3px solid #df85ff;
-  outline-offset: -9.2px;
 }
 
 #hidden-menu {
@@ -211,6 +211,7 @@ footer ul li {
 }
 
 footer ul li a {
+  display: inline-flex;
   color: #fff;
   font-size: 0.9rem;
   text-decoration: none;
@@ -249,7 +250,7 @@ footer ul li a:hover {
   #cart_icon,
   #options_icon {
     top: 7px;
-    max-height: 70px;
+    max-height: 62px;
   }
 
   header nav,
@@ -273,8 +274,9 @@ footer ul li a:hover {
   }
 
   #search_icon {
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
+    margin-top: 4.5px;
   }
 
   #hidden-menu {

@@ -6,6 +6,7 @@ const checkoutButton = document.querySelector(".checkout-now");
 
 cross.onclick = function () {
 cartItem.innerHTML = `<a href="/checkout.html" class="links">Undo</a>`;
+cartItem.style = "justify-content: center;"
 totalPrice.innerHTML = "0€"
 cartNumber.parentElement.removeChild(cartNumber);
 checkoutButton.style = "background: grey; box-shadow: none; cursor: auto;";

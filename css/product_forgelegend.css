@@ -176,8 +176,8 @@ hr {
   }
 
   100% {
-    top: 3.8em;
-    right: 1.1em;
+    top: 3.9em;
+    right: 0.8em;
   }
 }
 
@@ -198,8 +198,8 @@ hr {
 
   @keyframes cart1 {
     100% {
-      top: 3em;
-      right: 1.1em;
+      top: 3.3em;
+      right: 1em;
     }
   }
 }
@@ -289,7 +289,6 @@ hr {
     font-size: 1rem;
   }
 
-  .cart1-hidden,
   #cart1 {
     right: 10%;
     top: 28em;

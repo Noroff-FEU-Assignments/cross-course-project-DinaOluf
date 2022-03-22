@@ -6,5 +6,5 @@ let count = 0;
 addToCartButton.onclick = function () {
 count += 1;
 
-cartNumberContainer.innerHTML = `<div id="cart1">${count}<div>`
+cartNumberContainer.innerHTML = `<div id="cart1">${count}<div>`;
 }
