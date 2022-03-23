@@ -41,7 +41,7 @@ function submitForm(event){
     checkFormErrors();
   
     if(validateEmail(email.value) && validatePassword(password.value)) {
-      successContainer.innerHTML = '<div class="success-msg">You successfully submitted!</div>';
+      successContainer.innerHTML = '<div class="success-msg">SUCCESS! -You are now logged onto your account.</div>';
       form.reset();
     } else {
     successContainer.innerHTML = "";

@@ -36,7 +36,15 @@ main h2 {
   text-align: left;
   padding: 0;
   margin: 6px 16px;
-  width: 220px;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #1b203d;
+}
+
+.header-link:hover {
+  text-shadow: #fff 2px 2px 4px;
 }
 
 main p {
@@ -133,7 +141,7 @@ main section {
 .front_sell p {
   letter-spacing: 0.5px;
   margin-left: 16px;
-  width: 572px;
+  max-width: 572px;
   font-size: 1.1rem;
   margin-bottom: 0;
 }

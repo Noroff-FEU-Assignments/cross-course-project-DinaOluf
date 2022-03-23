@@ -154,8 +154,8 @@ main a:hover {
 }
 
 @media (max-width: 850px) {
-  main {
-    margin-bottom: 150px;
+  .main-wrapper {
+    margin-bottom: 2rem;
   }
 
   .breadcrumb {
@@ -186,8 +186,11 @@ main a:hover {
   }
 
   .label {
-    font-size: 0.7rem;
     padding: 0 10px;
+  }
+
+  .label h2 {
+    font-size: 1.3em;
   }
 
   .allgames {

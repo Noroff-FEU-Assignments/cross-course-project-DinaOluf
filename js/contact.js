@@ -40,8 +40,8 @@ function submitForm(event) {
   
     checkFormErrors();
   
-    if(validateEmail(email.value) && textArea.textLength > 20 && textArea.textLength <= 500) {
-      successContainer.innerHTML = '<div class="success-msg">You successfully submitted!</div>';
+    if(validateEmail(email.value) && textArea.textLength >= 20 && textArea.textLength <= 500) {
+      successContainer.innerHTML = '<div class="success-msg">SUCCESS! Thank you for contacting us.</div>';
       form.reset();
     } else {
     successContainer.innerHTML = "";

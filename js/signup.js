@@ -49,7 +49,7 @@ function submitForm(event) {
     checkFormErrors();
   
     if(validateEmail(email.value) && validatePassword(password.value) && confirmPassword.value === password.value) {
-      successContainer.innerHTML = '<div class="success-msg">You successfully submitted!</div>';
+      successContainer.innerHTML = '<div class="success-msg">SUCCESS! -Thank you for making an account.</div>';
       form.reset();
     } else {
     successContainer.innerHTML = "";

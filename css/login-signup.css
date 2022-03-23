@@ -64,6 +64,7 @@ main input {
   border-radius: 3px;
   background: rgb(108, 255, 108);
   font-size: 1.1em;
+  text-align: center;
 }
 
 .error-form {
