@@ -129,6 +129,11 @@ main section {
   margin-left: 1.5em;
 }
 
+.preorder-container p {
+  margin-right: 5%;
+  min-width: 5rem;
+}
+
 .front_sell {
   height: 153px;
   width: 785px;

@@ -40,7 +40,7 @@ main a:hover {
   grid-area: game;
 }
 
-#forgelegend {
+#product-image {
   height: 350px;
 }
 
@@ -219,7 +219,7 @@ hr {
       "desc desc";
   }
 
-  #forgelegend {
+  #product-image {
     height: 250px;
   }
 
@@ -241,7 +241,7 @@ hr {
     grid-template-rows: 80px 120px 80px 1fr;
   }
 
-  #forgelegend {
+  #product-image {
     height: auto;
     width: 80%;
     min-width: 150px;

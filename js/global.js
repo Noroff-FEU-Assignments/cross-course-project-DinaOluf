@@ -1,6 +1,7 @@
 const optionsButton = document.querySelector("#options_icon");
 const hiddenMenu = document.querySelector("#hidden-menu");
 
+
 optionsButton.onclick = function showOptions() {
     const menuClassList = hiddenMenu.classList;
 
