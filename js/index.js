@@ -9,11 +9,9 @@ async function getProducts() {
         const response = await fetch(API_URL);
         const products = await response.json();
 
-        console.log(products);
-
-
-
-        addPreorderHtml(products);
+        addPreOrderHtml(products);
+        addNewProductsHtml(products);
+        addUsedProductsHtml(products);
 
     } catch {
         console.log("API error");
@@ -22,25 +20,53 @@ async function getProducts() {
 
 getProducts();
 
-function addPreorderHtml(products) {
+function addPreOrderHtml(products) {
             
     frontPreOrder.innerHTML = "";
 
     for(let i = 0; i < products.length; i++){
-        if(products[i].categories[0].name !== "Pre-order") {
-            continue
-        }
-
-        frontPreOrder.innerHTML += `<div class="game-container">
+        if(products[i].id === 11 || products[i].id === 22 || products[i].id === 23) {
+            frontPreOrder.innerHTML += `<div class="game-container">
             <a href="/products/products.html?name=${products[i].name}&id=${products[i].id}">
                 <img src="${products[i].images[0].src}" class="front_games" alt="${products[i].images[0].alt}">
                 <div class="preorder-tag">${products[i].price}€</div>
             </a>
         </div>
         <p>${products[i].name}</p>`
-        
-        if(i === 2) {
-            break
-        } 
+        }
     } 
+}
+
+function addNewProductsHtml(products) {
+            
+    frontNewGames.innerHTML = "";
+
+    for(let i = 0; i < products.length; i++){
+        if(products[i].id === 29 || products[i].id === 28 || products[i].id === 27 || products[i].id === 26 || products[i].id === 25 || products[i].id === 24) {
+
+        frontNewGames.innerHTML += `<div class="game-container">
+            <a href="/products/products.html?name=${products[i].name}&id=${products[i].id}">
+                <img src="${products[i].images[0].src}" class="front_small" alt="${products[i].images[0].alt}">
+                <div class="pricetag">${products[i].price}€</div>
+            </a>
+        </div>`
+        } 
+    }
+}
+
+function addUsedProductsHtml(products) {
+            
+    frontUsedGames.innerHTML = "";
+
+    for(let i = 0; i < products.length; i++){
+        if(products[i].id === 36 || products[i].id === 35 || products[i].id === 34 || products[i].id === 33 || products[i].id === 32 || products[i].id === 31) {
+
+        frontUsedGames.innerHTML += `<div class="game-container">
+            <a href="/products/products.html?name=${products[i].name}&id=${products[i].id}">
+                <img src="${products[i].images[0].src}" class="front_small" alt="${products[i].images[0].alt}">
+                <div class="pricetag">${products[i].price}€</div>
+            </a>
+        </div>`
+        } 
+    }
 }

@@ -1,6 +1,9 @@
 const optionsButton = document.querySelector("#options_icon");
 const hiddenMenu = document.querySelector("#hidden-menu");
+// const searchLink = document.querySelector(".search-link");
+// const searchInput = document.querySelector(".search_bar");
 
+// searchLink.outerHTML = `<a href="../search.html?term=${searchInput.value}" class="search-link"><img src="../images/Search-icon.png" id="search_icon" alt="Search icon"></a>`;
 
 optionsButton.onclick = function showOptions() {
     const menuClassList = hiddenMenu.classList;
