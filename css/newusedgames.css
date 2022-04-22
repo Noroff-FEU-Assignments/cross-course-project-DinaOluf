@@ -75,15 +75,13 @@ main a:hover {
   max-width: 140px;
 }
 
-.pricetag {
+.pricetag, .pricetag2 {
   position: absolute;
   bottom: -2px;
   right: -8px;
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: #482c69;
-  color: #fff;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -91,20 +89,14 @@ main a:hover {
   font-size: 1.1rem;
 }
 
+.pricetag {
+  background: #482c69;
+  color: #fff;
+}
+
 .pricetag2 {
-  position: absolute;
-  bottom: -2px;
-  right: -8px;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
   background: #1b203d;
   color: #5fff50;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
 }
 
 .scroll-up {

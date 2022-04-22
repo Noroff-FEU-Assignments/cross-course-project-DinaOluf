@@ -8,13 +8,16 @@ const searchTerm = e.target.value.trim().toLowerCase();
 
 redirectSearch(searchTerm);
 
-// console.log(searchTerm);
+document.onkeyup = function enterToSearch(e) {
+    if (e.keyCode === 13 && searchInput === document.activeElement) {
+        location.href = `/search.html?result=${searchTerm}`;
+    }
+};
 };
 
 function redirectSearch(searchTerm) {
-    console.log(searchTerm);
-    searchLink.outerHTML = `<a href="../search.html?result=${searchTerm}" class="search-link"><img src="../images/Search-icon.png" id="search_icon" alt="Search icon"></a>`;
-}
+    searchLink.innerHTML = `<a href="../search.html?result=${searchTerm}" class="search-link"><img src="../images/Search-icon.png" id="search_icon" alt="Search icon"></a>`;
+};
 
 
 optionsButton.onclick = function showOptions() {

@@ -29,6 +29,7 @@ function addNewProductsHtml(products) {
     gamesContainer.innerHTML = "";
 
     for(let i = 0; i < products.length; i++){
+
         if(products[i].categories[0].name === "New") {
             gamesContainer.innerHTML += `<div class="game-container">
             <a href="/products/products.html?name=${products[i].name}&id=${products[i].id}">
@@ -45,6 +46,7 @@ function addUsedProductsHtml(products) {
     gamesContainer.innerHTML = "";
 
     for(let i = 0; i < products.length; i++){
+
         if(products[i].categories[0].name === "Used") {
             gamesContainer.innerHTML += `<div class="game-container">
             <a href="/products/products.html?name=${products[i].name}&id=${products[i].id}">
@@ -61,6 +63,7 @@ function addPreOrderHtml(products) {
     gamesContainer.innerHTML = "";
 
     for(let i = 0; i < products.length; i++){
+        
         if(products[i].categories[0].name === "Pre-order") {
             gamesContainer.innerHTML += `<div class="game-text-container">
             <div class="game-container">
