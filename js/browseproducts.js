@@ -1,6 +1,6 @@
 const gamesContainer = document.querySelector(".allgames");
 
-const API_URL = "https://dinasproject.one/gamehub/wp-json/wc/v3/products?consumer_key=ck_30aca4d54877b70d59f54f5aa514d1039793b73f&consumer_secret=cs_efb972c8c61f811623b386990607384bbbdbed25&per_page=100";
+const API_URL = "https://dinasproject.one/gamehub/wp-json/wc/v3/products?consumer_key=ck_5f05ebc4ec6cd2d4eabe2d9836dd5e07df53d447&consumer_secret=cs_4c7a6a6571a9dde895553b76c61b27ac2aa5c594&per_page=100";
 
 async function getProducts() {
     try {

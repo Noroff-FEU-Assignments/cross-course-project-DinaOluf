@@ -2,12 +2,14 @@ const frontPreOrder = document.querySelector(".preorder-container");
 const frontNewGames = document.querySelector(".front-new-games");
 const frontUsedGames = document.querySelector(".front-used-games");
 
-const API_URL = "https://dinasproject.one/gamehub/wp-json/wc/v3/products?consumer_key=ck_30aca4d54877b70d59f54f5aa514d1039793b73f&consumer_secret=cs_efb972c8c61f811623b386990607384bbbdbed25&per_page=100";
+const API_URL = "https://dinasproject.one/gamehub/wp-json/wc/v3/products?consumer_key=ck_5f05ebc4ec6cd2d4eabe2d9836dd5e07df53d447&consumer_secret=cs_4c7a6a6571a9dde895553b76c61b27ac2aa5c594&per_page=100";
 
 async function getProducts() {
     try {
         const response = await fetch(API_URL);
         const products = await response.json();
+
+        console.log(products)
 
         addPreOrderHtml(products);
         addNewProductsHtml(products);
@@ -25,7 +27,7 @@ function addPreOrderHtml(products) {
     frontPreOrder.innerHTML = "";
 
     for(let i = 0; i < products.length; i++){
-        if(products[i].id === 11 || products[i].id === 22 || products[i].id === 23) {
+        if(products[i].id === 41 || products[i].id === 42 || products[i].id === 43) {
             frontPreOrder.innerHTML += `<div class="game-container">
             <a href="/products/products.html?name=${products[i].name}&id=${products[i].id}">
                 <img src="${products[i].images[0].src}" class="front_games" alt="${products[i].images[0].alt}">
@@ -42,7 +44,7 @@ function addNewProductsHtml(products) {
     frontNewGames.innerHTML = "";
 
     for(let i = 0; i < products.length; i++){
-        if(products[i].id === 29 || products[i].id === 28 || products[i].id === 27 || products[i].id === 26 || products[i].id === 25 || products[i].id === 24) {
+        if(products[i].id === 44 || products[i].id === 45 || products[i].id === 46 || products[i].id === 47 || products[i].id === 48 || products[i].id === 49) {
 
         frontNewGames.innerHTML += `<div class="game-container">
             <a href="/products/products.html?name=${products[i].name}&id=${products[i].id}">
@@ -59,7 +61,7 @@ function addUsedProductsHtml(products) {
     frontUsedGames.innerHTML = "";
 
     for(let i = 0; i < products.length; i++){
-        if(products[i].id === 36 || products[i].id === 35 || products[i].id === 34 || products[i].id === 33 || products[i].id === 32 || products[i].id === 31) {
+        if(products[i].id === 51 || products[i].id === 52 || products[i].id === 53 || products[i].id === 55 || products[i].id === 56 || products[i].id === 57) {
 
         frontUsedGames.innerHTML += `<div class="game-container">
             <a href="/products/products.html?name=${products[i].name}&id=${products[i].id}">
