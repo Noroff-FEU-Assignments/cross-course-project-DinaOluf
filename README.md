@@ -20,8 +20,8 @@ GameHub allows you to purchase new and old games from all the popular consoles a
 
 - HTML
 - CSS
-- JavaScript
-- WordPress WooCommerce REST API
+- [JavaScript](https://www.javascript.com/)
+- [WordPress](https://wordpress.com/) [WooCommerce](https://woocommerce.com/) REST API
 
 ## Getting Started
 
