@@ -10,6 +10,7 @@ GameHub is an online shop where users can purchase computer games. This gaming m
 GameHub is a competitively priced website with a huge range of games.
 
 Slogan: "The universe of games" 
+
 Target audience: Gamers aged 18 to 25 who are interested in computer games, and would either like to purchase games or would like to sell games they have finished playing. 
 
 For a user buying games: It is an online game store that provides digital games to gamers at a competitive price.
