@@ -8,11 +8,11 @@ A website for users to buy video games. New and used, as well as pre-ordering up
 GameHub is an online shop where users can purchase computer games. This gaming marketplace lets you buy tons of video games online for any device.
 GameHub is a competitively priced website with a huge range of games.
 
-Slogan: "The universe of games"
-Target audience: Gamers aged 18 to 25 who are interested in computer games, and would either like to purchase games or would like to sell games they have finished playing.
+Slogan: "The universe of games" 
+Target audience: Gamers aged 18 to 25 who are interested in computer games, and would either like to purchase games or would like to sell games they have finished playing. 
 
 For a user buying games: It is an online game store that provides digital games to gamers at a competitive price.
-GameHub allows you to purchase new and old games from all the popular consoles as well as PC games.
+GameHub allows you to purchase new and old games from all the popular consoles as well as PC games. 
 
 ## Built With
 
@@ -52,9 +52,7 @@ As this is a school project, there will be no contributions.
 
 This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
+[My LinkedIn page](https://www.linkedin.com/in/dina-olufsen-42922721a/)
 
 
 ## Acknowledgments
