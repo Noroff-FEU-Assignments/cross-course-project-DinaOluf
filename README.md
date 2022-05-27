@@ -33,27 +33,11 @@ GameHub allows you to purchase new and old games from all the popular consoles a
 git clone git@github.com:Noroff-FEU-Assignments/cross-course-project-DinaOluf.git
 ```
 
-2. Install the dependencies:
-
-```
-npm install
-```
-
-### Running
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
-
 ## Contributing
 
-As this is a school project, there will be no contributions.
+If you have a suggestion that would make this better, please fork the repo and create a pull request.
 
 ## Contact
-
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
 [My LinkedIn page](https://www.linkedin.com/in/dina-olufsen-42922721a/)
 
