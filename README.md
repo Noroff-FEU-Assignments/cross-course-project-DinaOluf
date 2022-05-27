@@ -1,6 +1,7 @@
 # GameHub (Cross-Course Project)
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://user-images.githubusercontent.com/91533917/170666414-17912cc0-6d6a-401e-badf-84d4ceab4994.png)
+
 
 A website for users to buy video games. New and used, as well as pre-ordering upcoming games. 
 
