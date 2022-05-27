@@ -1,3 +1,5 @@
+**© ALL RIGHTS RESERVED** - contact me for inquiries.
+
 # GameHub (Cross-Course Project)
 
 ![image](https://user-images.githubusercontent.com/91533917/170666414-17912cc0-6d6a-401e-badf-84d4ceab4994.png)
